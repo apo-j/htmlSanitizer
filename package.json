@@ -1,0 +1,49 @@
+{
+  "name": "htmlsanitizer",
+  "version": "0.0.0",
+  "main": "htmlSanitizer.js",
+  "description": "The best module ever.",
+  "homepage": "https://github.com/apo-j/htmlsanitizer",
+  "bugs": "https://github.com/apo-j/htmlsanitizer/issues",
+  "author": {
+    "name": "apo-j",
+    "email": "jiyuny@yahoo.fr"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apo-j/htmlsanitizer"
+  },
+  "license": "MIT",
+  "files": [
+    "index.",
+    "lib"
+  ],
+  "keywords": [
+    "htmlsanitizer",
+    "html",
+    "sanitaizer"
+  ],
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^0.4.0",
+    "time-grunt": "^0.3.1",
+    "grunt-mocha-cli": "^1.9.0",
+    "jshint-stylish": "^0.2.0",
+    "browserify": "^4.1.3",
+    "grunt-browserify": "~3.0.1"
+  },
+  "scripts": {
+    "test": "grunt",
+    "browser": "browserify htmlSanitizer.js > browser.js"
+  },
+  "bin": {
+    "htmlsanitizer": "cli.js"
+  },
+  "preferGlobal": "true",
+  "dependencies": {
+    "cheerio": "~0.17.0",
+    "sanitizer": "~0.1.2"
+  }
+}

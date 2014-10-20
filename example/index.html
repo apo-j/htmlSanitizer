@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../dist/app.js"></script>
+</head>
+<body>
+<a href="http://tt.html">tt</a>
+<a href="tt.html">dd</a>
+<h2 id="features">Features</h2>
+<script>
+	$(function(){
+		var sanitizer = require('./htmlSanitizer.js');
+		console.log(sanitizer.Sanitize($('body').html()));
+	})
+</script>
+</body>
+</html>
